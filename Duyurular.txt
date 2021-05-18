@@ -1,0 +1,6 @@
+@topluluk<>Gezi Ve Doğa<>2021-04-05<>2021-04-30<>Gezi Topluluğu<>Adana'ya gezi düzenlenecek<>Duyuru->NORMAL<>Gezi
+@topluluk<>Girişimcilik<>2021-04-25<>2021-04-26<>Topluluk Başkanı<>Toplantı var duyurulur!!!<>Duyuru->ÖNEMLİ<>Toplantı
+@teknopark<>EKOL<>Proje<>2021-04-10<>2021-04-12<>Personel2<>Bilgi verilecektir.<>Duyuru->ÖNEMLİ<>Tanıtım
+@teknopark<>ASELSAN<>Yazılım<>2021-05-03<>2021-05-03<>Personel1<>15:00 da öğrenci seçimi olacaktır.<>Duyuru->ÖNEMLİ<>Kariyer Günü
+@akademik<>Rektör<>Final tarihleri belirlendi.<>2021-06-07<>2021-06-10<>Duyuru->ÖNEMLİ<>Tüm Bölümler<>Tüm Fakülteler<>Final Tarihi
+@akademik<>Ali Arı<>Vize tarihi açıklandı.<>2021-04-14<>2021-04-14<>Duyuru->ÖNEMLİ<>Bilgisayar Mühendisliği<>Mühendislik<>Vize Tarihi

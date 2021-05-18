@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="duyurutakipsistemi.AkademikDuyuruDuzenleController">
+   <children>
+      <Label layoutX="5.0" layoutY="190.0" prefHeight="25.0" prefWidth="129.0" text="Duyurunun Derecesi : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="234.0" text="Tarih :  ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="271.0" text="Geçerlilik : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="308.0" prefHeight="17.0" prefWidth="63.0" text="Duyuru :  ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="342.0" prefHeight="17.0" prefWidth="58.0" text="Fakülte : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="378.0" prefHeight="17.0" prefWidth="58.0" text="Bölüm :  ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="duyuru" layoutX="141.0" layoutY="304.0" />
+      <TextField fx:id="fakulte" layoutX="141.0" layoutY="338.0" />
+      <TextField fx:id="bolum" layoutX="141.0" layoutY="374.0" />
+      <TextField fx:id="duyuran" layoutX="141.0" layoutY="421.0" />
+      <Button layoutX="229.0" layoutY="478.0" mnemonicParsing="false" onAction="#kayitEkle" text="KAYDET" />
+      <Button layoutX="300.0" layoutY="478.0" mnemonicParsing="false" onAction="#kayitSil" text="SİL" />
+      <Button layoutX="83.0" layoutY="651.0" mnemonicParsing="false" onAction="#duyurular" text="DUYURULAR" />
+      <Button layoutX="17.0" layoutY="651.0" mnemonicParsing="false" onAction="#cikis" style="-fx-background-color: red;" text="ÇIKIŞ" textFill="WHITE" />
+      <Text layoutX="326.0" layoutY="35.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AKADEMİSYEN DUYURU DÜZENLE" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Text>
+      <TableView fx:id="tableView" layoutX="460.0" layoutY="59.0" prefHeight="494.0" prefWidth="838.0">
+        <columns>
+            <TableColumn fx:id="akademisyenDuyuruIsmiColumn" prefWidth="75.0" text="duyuru ismi" />
+          <TableColumn fx:id="duyuranColumn" prefWidth="82.0" text="duyuran" />
+          <TableColumn fx:id="duyuruColumn" prefWidth="68.0" text="duyuru" />
+            <TableColumn fx:id="yayinlanmaTarihiColumn" prefWidth="82.0" text="tarih" />
+            <TableColumn fx:id="gecerlilikTarihColumn" prefWidth="147.0" text="gecerlilik tarihi" />
+            <TableColumn fx:id="duyuruOnemColumn" prefWidth="116.0" text="seciniz" />
+            <TableColumn fx:id="fakulteColumn" minWidth="0.0" prefWidth="111.0" text="fakulte" />
+            <TableColumn fx:id="bolumColumn" editable="false" prefWidth="156.0" text="bolum" />
+        </columns>
+      </TableView>
+      <Text layoutX="15.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duyuran : " wrappingWidth="67.52344965934753">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="duyuruOnem" layoutX="141.0" layoutY="190.0" prefWidth="150.0" />
+      <Text layoutX="9.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duyuru İsmi : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="duyuruIsmi" layoutX="142.0" layoutY="150.0" />
+      <DatePicker fx:id="yayinlanmaTarihi" layoutX="140.0" layoutY="230.0" />
+      <DatePicker fx:id="gecerlilikTarihi" layoutX="140.0" layoutY="267.0" />
+      <Text fill="RED" layoutX="329.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Güncelleme işlemi için zorunlu alan!" wrappingWidth="78.52732598781586" />
+      <TextField fx:id="guncellenecek" layoutX="167.0" layoutY="106.0" />
+      <Text layoutX="5.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Güncellenecek Duyuru ismi : " wrappingWidth="164.99999105930328">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="353.0" layoutY="478.0" mnemonicParsing="false" onAction="#kayitGuncelle" text="GÜNCELLE" />
+   </children>
+</AnchorPane>

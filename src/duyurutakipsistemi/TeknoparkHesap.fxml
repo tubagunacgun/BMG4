@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="duyurutakipsistemi.TeknoparkHesapController">
+   <children>
+      <Text layoutX="39.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Akademik Duyurular : " wrappingWidth="150.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teknopark Duyuruları : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topluluk Duyuruları : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="204.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DUYURULAR" wrappingWidth="124.7724609375">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="duzenle" layoutX="85.0" layoutY="650.0" mnemonicParsing="false" onAction="#duzenle" text="Düzenle" />
+      <Button fx:id="cikis" layoutX="13.0" layoutY="646.0" mnemonicParsing="false" onAction="#cikis" prefHeight="33.0" prefWidth="59.0" style="-fx-background-color: red;" text="Çıkış" textFill="WHITE" />
+      <TableView fx:id="akademisyenTableView" layoutX="195.0" layoutY="79.0" prefHeight="169.0" prefWidth="1065.0">
+        <columns>
+            <TableColumn fx:id="akademisyenDuyuruIsmiColumn" prefWidth="75.0" text="duyuru ismi" />
+          <TableColumn fx:id="akademisyenDuyuranColumn" prefWidth="116.99996948242188" text="duyuran" />
+          <TableColumn fx:id="akademisyenDuyuruColumn" prefWidth="247.0" text="duyuru" />
+            <TableColumn fx:id="akademisyenYayinlanmaTarihiColumn" prefWidth="98.0" text="tarih" />
+            <TableColumn fx:id="akademisyenGecerlilikTarihColumn" prefWidth="126.0" text="gecerlilik tarihi" />
+            <TableColumn fx:id="akademisyenDuyuruOnemColumn" prefWidth="136.0" text="seciniz" />
+            <TableColumn fx:id="akademisyenFakulteColumn" prefWidth="141.0" text="fakulte" />
+            <TableColumn fx:id="akademisyenBolumColumn" prefWidth="128.0" text="bolum" />
+        </columns>
+      </TableView>
+      <TableView fx:id="teknoparkTableView" layoutX="195.0" layoutY="266.0" prefHeight="169.0" prefWidth="1065.0">
+        <columns>
+            <TableColumn fx:id="teknoparkDuyuruIsmiColumn" prefWidth="75.0" text="duyuru ismi" />
+          <TableColumn fx:id="teknoparkDuyuranColumn" prefWidth="123.99996948242188" text="duyuran" />
+          <TableColumn fx:id="teknoparkDuyuruColumn" prefWidth="277.0" text="duyuru" />
+            <TableColumn fx:id="teknoparkYayinlanmaTarihiColumn" prefWidth="113.0" text="tarih" />
+            <TableColumn fx:id="teknoparkGecerlilikTarihColumn" prefWidth="124.0" text="gecerlilik tarihi" />
+            <TableColumn fx:id="teknoparkDuyuruOnemColumn" prefWidth="104.0" text="seciniz" />
+            <TableColumn fx:id="teknoparkSirketIsmiColumn" prefWidth="98.0" text="sirket adi" />
+            <TableColumn fx:id="teknoparkCalismaAlaniColumn" prefWidth="149.0" text="calisma alani" />
+        </columns>
+      </TableView>
+      <TableView fx:id="toplulukTableView" layoutX="195.0" layoutY="453.0" prefHeight="169.0" prefWidth="1065.0">
+        <columns>
+            <TableColumn fx:id="toplulukDuyuruIsmiColumn" prefWidth="75.0" text="duyuru ismi" />
+          <TableColumn fx:id="toplulukDuyuranColumn" prefWidth="141.99996948242188" text="duyuran" />
+          <TableColumn fx:id="toplulukDuyuruColumn" prefWidth="301.0" text="duyuru" />
+            <TableColumn fx:id="toplulukYayinlanmaTarihiColumn" prefWidth="130.0" text="tarih" />
+            <TableColumn fx:id="toplulukGecerlilikTarihColumn" prefWidth="136.0" text="gecerlilik tarihi" />
+            <TableColumn fx:id="toplulukDuyuruOnemColumn" prefWidth="126.0" text="seciniz" />
+            <TableColumn fx:id="toplulukIsmiColumn" prefWidth="151.0" text="topluluk ismi" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
